@@ -2,7 +2,7 @@ import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 const Header = () => {
-  const { data: session } = useSession();
+  const { data: session? } = useSession();
 
   return (
     <div className="bg-gray-400 min-h-10 flex justify-evenly px-8 pt-4 pb-4 items-center">
